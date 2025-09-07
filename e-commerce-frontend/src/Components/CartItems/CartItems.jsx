@@ -22,7 +22,7 @@ const CartItems = () => {
 
         if(cartItems[e.id]>0)
         {
-          return  <div>
+          return  <div key={e.id}>
                     <div className="cartitems-format">
                       <img className="cartitems-product-icon" src={e.image} alt="" />
                       <p cartitems-product-title>{e.name}</p>
